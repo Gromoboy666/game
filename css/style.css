@@ -6,8 +6,8 @@ body{
 /******************* стиль кнопок ***************/
 
 .main-buttons {
-  width:200px;
-  height:200px;
+  width:90px;
+  height:90px;
   display: inline-block;
   font-weight: bold;
   color: #fff;
