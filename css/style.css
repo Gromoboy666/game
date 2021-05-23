@@ -4,8 +4,8 @@ body{
 }
 
 .main-buttons{
-  height:150px;
-  width:150px;
+  height:200px;
+  width:250px;
   margin:5px 3px 3px 3px;
   font-weight:bold;
   color:#fff;
@@ -46,7 +46,7 @@ div.answers ol li {
   font-size:20px;
   font-weight:bold;
   margin:0px auto;  
-  font-size:42px; 
+  font-size:80px; 
 }
 div.answers ol {
   margin:0 auto;
