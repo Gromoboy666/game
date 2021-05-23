@@ -38,6 +38,7 @@ div.answers h1 {
   padding:10px;
   border-radius: 24px  5px 24px 5px;
   bottom:0;
+  font-size:72px;
 }
 div.answers ol li {
   display:inline-block;
