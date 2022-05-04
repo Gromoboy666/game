@@ -1,6 +1,7 @@
 body{
 	font-family: 'Montserrat', sans-serif;
 	margin: 0px;
+  background-color: rgb(165, 174, 182);
 }
 
 /******************* стиль кнопок ***************/
@@ -10,7 +11,7 @@ body{
   height:90px;
   display: inline-block;
   font-weight: bold;
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-shadow: 0 -1px rgba(0,0,0,.5);
   user-select: none;
@@ -18,7 +19,7 @@ body{
   border: 1px solid rgb(80,32,0);
   border-radius: 5px;
   outline: none;
-  background: rgb(147,80,36) linear-gradient(rgb(106,58,26), rgb(147,80,36) 80%);
+  background: rgb(147,80,36) linear-gradient(rgb(104, 83, 83), rgb(110, 81, 81) 80%);
   box-shadow:
    0 6px rgb(86,38,6),
    0 3px 15px rgba(0,0,0,.4),
@@ -51,23 +52,36 @@ body{
 .menu li {
   display:inline-block;
   padding:10px;
-  font-size:16px;
+  font-size:1em;
   font-weight:bold;
 }
-div.answers h1 {
-  margin:10px auto;
-  border: 4px solid gray;
-  width:95%;
-  height:50%;
-  padding:10px;
-  border-radius: 24px  5px 24px 5px;
-  bottom:0;
-  font-size:36px;
+h1 {text-align:center;}
+
+div.first h1 {
+  border:10px solid gray;
+  margin:50px auto;
+  width:30%;
+  font-size:7em;
+  padding:auto;
+  letter-spacing:10px;
+  background-color: rgb(177, 168, 168);
+  border-radius: 100px;
+
+}
+div.second {
+  border:10px solid gray;
+  padding:auto;
+  letter-spacing:10px;
+  background-color: rgb(177, 168, 168);
+  border-radius: 50px 50px 0px 0px;
+
+} 
+div.second h1 {
+  font-weight:bold;
 }
 div.answers ol.nums li {
   display:inline-block;
   padding:10px;
-  font-size:20px;
   font-weight:bold;
   margin:0px auto;  
   font-size:50px; 
@@ -76,7 +90,8 @@ div.answers ol.nums li {
 div.answers ol, div.answers div.col-3 {
   margin:0 auto;
   box-sizing: border-box;
-  background: -webkit-linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px,
+  background-color:rgb(68, 55, 55);
+  /* background: -webkit-linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px,
             -webkit-linear-gradient(243deg, #151515 5px, transparent 5px) 10px 0px,
             -webkit-linear-gradient(63deg, #222 5px, transparent 5px) 0px 10px,
             -webkit-linear-gradient(243deg, #222 5px, transparent 5px) 10px 5px,
@@ -95,7 +110,7 @@ background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
             linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
             linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
 background-size: 20px 20px;
-background-color: #131313
+background-color: #131313 */
 }
 div.answers {
   width:100%;

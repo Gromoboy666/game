@@ -1,7 +1,11 @@
 var h = window.screen.availHeight;
 var w = window.screen.availWidth;
 array = [];
-var MyNumber = 1;
+var MyNumber = getRandomInt(1, 15);
+document.getElementById('MyNumber').innerHTML = Math.ceil(MyNumber);
+var movesCounter = 0;
+var moves = document.getElementById("moves");
+var needNumber = document.getElementById("needNumber");
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -31,17 +35,34 @@ function sign(answer){
   if (answer != 0){
     random = getRandomInt(1, 5);
     if(random == 1){
+      console.log(MyNumber, "+", answer, "=", MyNumber + parseInt(answer))
       MyNumber += parseInt(answer);
+      alert("Выполнено сложение!")
+      
     } else if(random == 2) {
+      console.log(MyNumber, "-", answer, "=", MyNumber - parseInt(answer))
       MyNumber -= parseInt(answer);
+      alert("Выполнено вычитание!")
     } else if(random == 3) {
+      console.log(MyNumber, "/", answer, "=", MyNumber / parseInt(answer))
       MyNumber /= parseInt(answer);
+
+      alert("Выполнено деление!")
     } else if(random == 4) {
+      console.log(MyNumber, "*", answer, "=", MyNumber * parseInt(answer))
       MyNumber *= parseInt(answer);
+      alert("Выполнено умножение!")
     }
-}
-  document.getElementById('MyNumber').innerHTML = Math.floor(MyNumber);
+    MyNumber = Math.ceil(MyNumber);
+    movesCounter+=1;
+    moves.innerHTML = movesCounter;
+  }
+  document.getElementById('MyNumber').innerHTML = Math.ceil(MyNumber);
   generate()
+  if (MyNumber == needNumber.innerHTML){
+    alert("Вы победили! Число было изменено, можно продолжить игру")
+    needNumber.innerHTML = getRandomInt(100, 1000);
+  }
 }
 
 
@@ -60,6 +81,7 @@ function move4() {
 
 function init(){
   generate();
+  needNumber.innerHTML = getRandomInt(100, 1000);
   var but1 = document.getElementById('but-1');
   var but2 = document.getElementById('but-2');
   var but3 = document.getElementById('but-3');
