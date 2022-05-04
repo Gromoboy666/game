@@ -8,7 +8,7 @@ body{
 
 .main-buttons {
   width:100%;
-  height:90px;
+  height:70px;
   display: inline-block;
   font-weight: bold;
   color: rgb(255, 255, 255);
@@ -45,8 +45,8 @@ body{
 
 .menu {
   background: rgba(58, 55, 55, 0.5);
-  height:50px;
-  padding-top:5px;
+  height:40px;
+  padding-top:0px;
   box-sizing: border-box;
 }
 .menu li {
@@ -58,12 +58,13 @@ body{
 h1 {text-align:center;}
 
 div.first h1 {
-  border:10px solid gray;
+
   margin:50px auto;
-  width:30%;
+  width:60%;
   font-size:7em;
   padding:auto;
-  letter-spacing:10px;
+  letter-spacing:5px;
+  border:10px solid gray;
   background-color: rgb(177, 168, 168);
   border-radius: 100px;
 
