@@ -61,7 +61,7 @@ function sign(answer){
   generate()
   if (MyNumber == needNumber.innerHTML){
     alert("Вы победили! Число было изменено, можно продолжить игру")
-    needNumber.innerHTML = getRandomInt(100, 1000);
+    needNumber.innerHTML = getRandomInt(100, 500);
   }
 }
 
@@ -81,7 +81,7 @@ function move4() {
 
 function init(){
   generate();
-  needNumber.innerHTML = getRandomInt(100, 1000);
+  needNumber.innerHTML = getRandomInt(100, 300);
   var but1 = document.getElementById('but-1');
   var but2 = document.getElementById('but-2');
   var but3 = document.getElementById('but-3');
