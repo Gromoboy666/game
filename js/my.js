@@ -11,9 +11,9 @@ function getRandomInt(min, max) {
 }
 //Генерируем случайные числа и проверяем на 0
 function check(){
-  random = getRandomInt(-5, 5);
+  random = getRandomInt(-5, 8);
   while(!random){
-    random = getRandomInt(-5, 5);
+    random = getRandomInt(-5, 8);
   }
 }
 // Меняем ответы
